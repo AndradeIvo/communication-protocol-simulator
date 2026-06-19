@@ -78,4 +78,12 @@ Communication Protocol Simulator
 [BATTERY MANAGEMENT SYSTEM]
 [CAN FRAME] ID: 0x101 DLC: 3 Data: 0x23 0x50 0x01
 ```
+## Build
 
+```bash
+gcc ./src/main.c ./src/uart.c ./src/spi.c ./src/i2c.c ./src/can.c ./src/gps.c ./src/temperature_sensor.c ./src/bms.c -o simulator.exe
+```
+## Run
+```bash
+./simulator.exe
+```
